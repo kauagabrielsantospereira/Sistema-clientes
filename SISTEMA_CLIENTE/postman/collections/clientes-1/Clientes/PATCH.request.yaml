@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:3000/clientes/2
+method: PATCH
+order: 4479506253218840

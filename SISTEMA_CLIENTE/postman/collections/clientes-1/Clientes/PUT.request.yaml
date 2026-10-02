@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:3000/clientes/3
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+      "nome": "Ana Paula Atualizado",
+      "email": "anaatualizado@gmail.com",
+      "status": "ativo"
+    }
+order: 4449008350623594

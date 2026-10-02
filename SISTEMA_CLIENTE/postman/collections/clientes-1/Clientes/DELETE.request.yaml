@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:3000/clientes/4
+method: DELETE
+order: 4475335794820164

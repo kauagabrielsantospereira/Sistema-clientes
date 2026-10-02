@@ -1,0 +1,378 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "PostMan",
+    "version": "1.0.0",
+    "description": ""
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    },
+    {
+      "url": ""
+    }
+  ],
+  "paths": {
+    "/pedidos": {
+      "post": {
+        "summary": "POST",
+        "responses": {},
+        "tags": [
+          "pedidos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "cliente_id": {
+                    "type": "integer"
+                  },
+                  "valor_total": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "example": {
+                "cliente_id": 5,
+                "valor_total": 100
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "GET",
+        "responses": {},
+        "tags": [
+          "pedidos"
+        ]
+      }
+    },
+    "/pedidos/1": {
+      "get": {
+        "summary": "GET - ID",
+        "responses": {},
+        "tags": [
+          "pedidos"
+        ]
+      }
+    },
+    "/pedidos/1/status": {
+      "patch": {
+        "summary": "PATCH",
+        "responses": {},
+        "tags": [
+          "pedidos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "status": "pago"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pedidos/1/itens": {
+      "post": {
+        "summary": "POST - ID",
+        "responses": {},
+        "tags": [
+          "pedidos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "produto_id": {
+                    "type": "integer"
+                  },
+                  "quantidade": {
+                    "type": "integer"
+                  },
+                  "preco_unitario": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "example": {
+                "produto_id": 1,
+                "quantidade": 2,
+                "preco_unitario": 50
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pedidos/1/itens/1": {
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "pedidos"
+        ]
+      }
+    },
+    "/usuarios": {
+      "post": {
+        "summary": "POST",
+        "responses": {},
+        "tags": [
+          "usuário"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "senha": {
+                    "type": "string",
+                    "format": "color"
+                  },
+                  "perfil": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "nome": "Administrador",
+                "email": "admin@gmail.com",
+                "senha": "123456",
+                "perfil": "admin",
+                "status": "ativo"
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "GET",
+        "responses": {},
+        "tags": [
+          "usuário"
+        ]
+      }
+    },
+    "/usuarios/3": {
+      "get": {
+        "summary": "GET - ID",
+        "responses": {},
+        "tags": [
+          "usuário"
+        ]
+      },
+      "put": {
+        "summary": "PUT",
+        "responses": {},
+        "tags": [
+          "usuário"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "senha": {
+                    "type": "string",
+                    "format": "color"
+                  },
+                  "perfil": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "nome": "Administrador Atualizado",
+                "email": "admin2@gmail.com",
+                "senha": "654321",
+                "perfil": "admin",
+                "status": "ativo"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "PATCH",
+        "responses": {},
+        "tags": [
+          "usuário"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "status": "inativo"
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "usuário"
+        ]
+      }
+    },
+    "/clientes": {
+      "get": {
+        "summary": "GET",
+        "responses": {},
+        "tags": [
+          "Clientes"
+        ]
+      },
+      "post": {
+        "summary": "POST",
+        "responses": {},
+        "tags": [
+          "Clientes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "telefone": {
+                    "type": "string",
+                    "format": "utc-millisec"
+                  }
+                }
+              },
+              "example": {
+                "nome": "Ana Paula",
+                "email": "ana@gmail.com",
+                "telefone": "4799999888"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "GET - ID",
+        "responses": {},
+        "tags": [
+          "Clientes"
+        ]
+      }
+    },
+    "/clientes/3": {
+      "put": {
+        "summary": "PUT",
+        "responses": {},
+        "tags": [
+          "Clientes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "status": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "nome": "Ana Paula Atualizado",
+                "email": "anaatualizado@gmail.com",
+                "status": "ativo"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/clientes/4": {
+      "delete": {
+        "summary": "DELETE",
+        "responses": {},
+        "tags": [
+          "Clientes"
+        ]
+      },
+      "get": {
+        "summary": "GET - ID",
+        "responses": {},
+        "tags": [
+          "Clientes"
+        ]
+      }
+    },
+    "/clientes/2": {
+      "patch": {
+        "summary": "PATCH",
+        "responses": {},
+        "tags": [
+          "Clientes"
+        ]
+      }
+    }
+  }
+}

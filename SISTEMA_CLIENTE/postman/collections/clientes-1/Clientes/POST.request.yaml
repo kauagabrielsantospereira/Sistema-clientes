@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:3000/clientes
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"nome\": \"Ana Paula\",\r
+
+    \  \"email\": \"ana@gmail.com\",\r
+
+    \  \"telefone\": \"4799999888\"\r
+
+    }"
+order: 1732671547756787

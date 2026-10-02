@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:3000/usuarios/3
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"nome\": \"Administrador Atualizado\",\r
+
+    \  \"email\": \"admin2@gmail.com\",\r
+
+    \  \"senha\": \"654321\",\r
+
+    \  \"perfil\": \"admin\",\r
+
+    \  \"status\": \"ativo\"\r
+
+    }"
+order: 3677012645059570

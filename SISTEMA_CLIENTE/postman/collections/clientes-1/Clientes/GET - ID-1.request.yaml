@@ -1,0 +1,6 @@
+$kind: http-request
+name: GET - ID
+description: ""
+url: http://localhost:3000/clientes/4
+method: GET
+order: 4485723337776847

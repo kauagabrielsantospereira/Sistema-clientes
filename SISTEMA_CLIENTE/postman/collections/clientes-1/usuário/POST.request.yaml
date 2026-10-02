@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:3000/usuarios
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"nome\": \"Administrador\",\r
+
+    \  \"email\": \"admin@gmail.com\",\r
+
+    \  \"senha\": \"123456\",\r
+
+    \  \"perfil\": \"admin\",\r
+
+    \  \"status\": \"ativo\"\r
+
+    }"
+order: 1790982440074

@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:3000/pedidos/1/itens
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"produto_id\": 1,\r
+
+    \  \"quantidade\": 2,\r
+
+    \  \"preco_unitario\": 50.00\r
+
+    }"
+order: 4301081623710273

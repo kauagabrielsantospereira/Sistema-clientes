@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:3000/pedidos/1/status
+method: PATCH
+body:
+  type: json
+  content: "{\r\n  \"status\": \"pago\"\r\n}"
+order: 3874668605987297
